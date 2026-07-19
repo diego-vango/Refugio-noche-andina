@@ -1,0 +1,6 @@
+{
+  "name": "Refugio Noche Andina",
+  "description": "Landing page para el arriendo de cabañas sostenibles en el Valle del Elqui, Vicuña. Reservas directas por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
