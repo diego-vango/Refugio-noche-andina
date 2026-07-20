@@ -21,8 +21,8 @@ export default function About() {
         {/* Grid Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Column 1: Descriptive text */}
-          <div className="lg:col-span-7 space-y-6">
+          {/* Column 1: Descriptive text & Values */}
+          <div className="lg:col-span-6 space-y-6">
             <h3 className="font-sans text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
               Tu estadía inolvidable en las mágicas tierras de Gabriela Mistral
             </h3>
@@ -45,51 +45,89 @@ export default function About() {
             </div>
           </div>
 
-          {/* Column 2: Highlights/Values Cards */}
-          <div className="lg:col-span-5 space-y-4">
+          {/* Column 2: Surroundings Gallery & Values */}
+          <div className="lg:col-span-6 space-y-8">
             
-            {/* Card 1 */}
-            <div className="flex items-start gap-4 p-5 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 hover:shadow-xl hover:shadow-gold-500/5 transition-all">
-              <div className="p-3 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
-                <Sun className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-sans text-sm tracking-wider uppercase font-black text-[#F5F2ED]">
-                  Energía del Sol & Estrellas
-                </h4>
-                <p className="font-sans text-xs text-[#A0A5B0] mt-1 leading-relaxed">
-                  Disfruta de más de 300 días despejados al año y noches infinitas con contaminación lumínica cero.
-                </p>
+            {/* Pictures of the surroundings */}
+            <div className="space-y-4">
+              <h4 className="font-mono text-xs font-black text-gold-500 tracking-[0.2em] uppercase">
+                Alrededores del Refugio
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative group overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-night-950">
+                  <img
+                    src="/src/assets/images/alrededores_elqui_valley_1784506524079.jpg"
+                    alt="Entorno natural de cerros y valles en Vicuña"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                    <span className="font-sans text-xs font-bold text-white uppercase tracking-wider">
+                      Cerros Majestuosos
+                    </span>
+                  </div>
+                </div>
+                <div className="relative group overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-night-950">
+                  <img
+                    src="/src/assets/images/elqui_valley_hero_1784501630579.jpg"
+                    alt="Cielos estrellados en el Valle del Elqui"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                    <span className="font-sans text-xs font-bold text-white uppercase tracking-wider">
+                      Cielos Estrellados
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="flex items-start gap-4 p-5 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 hover:shadow-xl hover:shadow-gold-500/5 transition-all">
-              <div className="p-3 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
-                <Map className="w-5 h-5" />
+            {/* Quick Values cards */}
+            <div className="space-y-4">
+              {/* Card 1 */}
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 transition-all">
+                <div className="p-2.5 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
+                  <Sun className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-sans text-xs tracking-wider uppercase font-black text-[#F5F2ED]">
+                    Energía del Sol & Estrellas
+                  </h4>
+                  <p className="font-sans text-[11px] text-[#A0A5B0] mt-0.5 leading-relaxed">
+                    Disfruta de más de 300 días despejados al año y noches infinitas con contaminación lumínica cero.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-sans text-sm tracking-wider uppercase font-black text-[#F5F2ED]">
-                  Ubicación Estratégica en Vicuña
-                </h4>
-                <p className="font-sans text-xs text-[#A0A5B0] mt-1 leading-relaxed">
-                  A minutos de atractivos culturales, observatorios turísticos, ríos y senderos de trekking cordilleranos.
-                </p>
-              </div>
-            </div>
 
-            {/* Card 3 */}
-            <div className="flex items-start gap-4 p-5 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 hover:shadow-xl hover:shadow-gold-500/5 transition-all">
-              <div className="p-3 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
-                <Heart className="w-5 h-5" />
+              {/* Card 2 */}
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 transition-all">
+                <div className="p-2.5 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
+                  <Map className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-sans text-xs tracking-wider uppercase font-black text-[#F5F2ED]">
+                    Ubicación Estratégica en Vicuña
+                  </h4>
+                  <p className="font-sans text-[11px] text-[#A0A5B0] mt-0.5 leading-relaxed">
+                    A minutos de atractivos culturales, observatorios turísticos, ríos y senderos de trekking cordilleranos.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-sans text-sm tracking-wider uppercase font-black text-[#F5F2ED]">
-                  Hospitalidad Familiar Directa
-                </h4>
-                <p className="font-sans text-xs text-[#A0A5B0] mt-1 leading-relaxed">
-                  Atención directa por sus dueños, recomendaciones locales honestas y gestión rápida vía WhatsApp.
-                </p>
+
+              {/* Card 3 */}
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-night-950 border border-white/5 hover:border-gold-500/30 transition-all">
+                <div className="p-2.5 bg-gold-500/10 rounded-xl text-gold-400 shrink-0">
+                  <Heart className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-sans text-xs tracking-wider uppercase font-black text-[#F5F2ED]">
+                    Hospitalidad Familiar Directa
+                  </h4>
+                  <p className="font-sans text-[11px] text-[#A0A5B0] mt-0.5 leading-relaxed">
+                    Atención directa por sus dueños, recomendaciones locales honestas y gestión rápida vía WhatsApp.
+                  </p>
+                </div>
               </div>
             </div>
 

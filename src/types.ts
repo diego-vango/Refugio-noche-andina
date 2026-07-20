@@ -42,6 +42,7 @@ export interface Testimonial {
   date: string;
   cabinName: string;
   avatarSeed: string;
+  platform?: 'airbnb' | 'booking' | 'google' | 'direct';
 }
 
 export interface FAQItem {

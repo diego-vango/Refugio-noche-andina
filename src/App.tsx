@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import CabinList from './components/CabinList';
 import BookingCalculator from './components/BookingCalculator';
+import Location from './components/Location';
 import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
@@ -40,7 +41,10 @@ export default function App() {
         setSelectedCabinId={setSelectedCabinId}
       />
 
-      {/* 6. Guest Reviews & Trust testimonials */}
+      {/* 6. Physical Location with Google Maps directions */}
+      <Location />
+
+      {/* 7. Guest Reviews & Trust testimonials */}
       <Reviews />
 
       {/* 9. FAQs Accordion */}

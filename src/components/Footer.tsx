@@ -74,6 +74,9 @@ export default function Footer() {
                 <a href="#cotizador" className="hover:text-white transition-colors">Cotizador</a>
               </li>
               <li>
+                <a href="#ubicacion" className="hover:text-white transition-colors">Ubicación</a>
+              </li>
+              <li>
                 <a href="#preguntas" className="hover:text-white transition-colors">Preguntas</a>
               </li>
             </ul>

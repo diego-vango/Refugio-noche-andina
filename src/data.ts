@@ -165,7 +165,8 @@ export const REVIEWS: Testimonial[] = [
     rating: 5,
     date: 'Marzo 2026',
     cabinName: 'Cruz del Sur',
-    avatarSeed: 'camila'
+    avatarSeed: 'camila',
+    platform: 'google'
   },
   {
     id: '2',
@@ -174,7 +175,8 @@ export const REVIEWS: Testimonial[] = [
     rating: 5,
     date: 'Enero 2026',
     cabinName: 'Los Pimientos',
-    avatarSeed: 'rodrigo'
+    avatarSeed: 'rodrigo',
+    platform: 'airbnb'
   },
   {
     id: '3',
@@ -183,7 +185,8 @@ export const REVIEWS: Testimonial[] = [
     rating: 5,
     date: 'Junio 2026',
     cabinName: 'Cruz del Sur',
-    avatarSeed: 'mariela'
+    avatarSeed: 'mariela',
+    platform: 'booking'
   }
 ];
 

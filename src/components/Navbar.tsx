@@ -24,6 +24,7 @@ export default function Navbar() {
     { name: 'Nosotros', href: '#nosotros' },
     { name: 'Cabañas', href: '#cabanas' },
     { name: 'Cotizador', href: '#cotizador' },
+    { name: 'Ubicación', href: '#ubicacion' },
     { name: 'Preguntas', href: '#preguntas' },
   ];
 

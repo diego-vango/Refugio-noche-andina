@@ -34,11 +34,28 @@ export default function Reviews() {
               >
                 <div className="space-y-4">
                   
-                  {/* Rating Stars */}
-                  <div className="flex items-center gap-1">
-                    {[...Array(rev.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 text-gold-400 fill-gold-400" />
-                    ))}
+                  {/* Rating Stars & Platform Badge */}
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(rev.rating)].map((_, i) => (
+                        <Star key={i} className="w-3.5 h-3.5 text-gold-400 fill-gold-400" />
+                      ))}
+                    </div>
+                    {rev.platform === 'airbnb' && (
+                      <span className="font-sans text-[9px] font-black tracking-wider uppercase bg-red-500/10 text-red-400 border border-red-500/20 px-2.5 py-0.5 rounded-full">
+                        Airbnb
+                      </span>
+                    )}
+                    {rev.platform === 'booking' && (
+                      <span className="font-sans text-[9px] font-black tracking-wider uppercase bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2.5 py-0.5 rounded-full">
+                        Booking.com
+                      </span>
+                    )}
+                    {rev.platform === 'google' && (
+                      <span className="font-sans text-[9px] font-black tracking-wider uppercase bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 px-2.5 py-0.5 rounded-full">
+                        Google
+                      </span>
+                    )}
                   </div>
 
                   {/* Comment */}
