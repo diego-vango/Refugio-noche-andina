@@ -1,4 +1,6 @@
 import { Cabin, Activity, Constellation, Testimonial, FAQItem } from './types';
+import cruzDelSurImg from './assets/images/cruz_del_sur_cabin_1784501640234.jpg';
+import losPimientosImg from './assets/images/los_pimientos_cabin_1784501649919.jpg';
 
 export const CABINS: Cabin[] = [
   {
@@ -8,7 +10,7 @@ export const CABINS: Cabin[] = [
     capacity: '2 a 3 personas',
     beds: '1 Cama Matrimonial + 1 Sofá Cama',
     pricePerNight: 75000,
-    mainImage: '/src/assets/images/cruz_del_sur_cabin_1784501640234.jpg',
+    mainImage: cruzDelSurImg,
     airbnbLink: 'https://www.airbnb.cl',
     bookingLink: 'https://www.booking.com',
     secondaryDescription: 'Ubicada estratégicamente en Vicuña para capturar las vistas más imponentes del Valle del Elqui, es el refugio ideal para parejas o pequeñas familias que buscan tranquilidad, meditación y una conexión mágica con el cielo estrellado de Elqui.',
@@ -41,7 +43,7 @@ export const CABINS: Cabin[] = [
     capacity: 'Hasta 7 personas',
     beds: '1 Matrimonial + 1 Simple + 4 Literas (camarotes)',
     pricePerNight: 85000,
-    mainImage: '/src/assets/images/los_pimientos_cabin_1784501649919.jpg',
+    mainImage: losPimientosImg,
     airbnbLink: 'https://www.airbnb.cl',
     bookingLink: 'https://www.booking.com',
     secondaryDescription: 'La propiedad cuenta con dos estructuras independientes en el mismo sitio: el gran loft principal con espacio abierto (cama matrimonial, cama de una plaza, baño y cocina) y una segunda casa separada que cuenta con su propio baño completo y dos cómodos camarotes (literas).',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Phone, Compass, Sparkles, Heart } from 'lucide-react';
 import { motion } from 'motion/react';
+import elquiHeroImg from '../assets/images/elqui_valley_hero_1784501630579.jpg';
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
       {/* Background Image with Dark Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/elqui_valley_hero_1784501630579.jpg"
+          src={elquiHeroImg}
           alt="Breathtaking landscape of Valle del Elqui with starry sky"
           className="w-full h-full object-cover scale-105 opacity-40 filter brightness-[0.7] contrast-[1.1]"
           referrerPolicy="no-referrer"

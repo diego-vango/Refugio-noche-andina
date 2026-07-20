@@ -1,8 +1,10 @@
 import React from 'react';
 import { MapPin, Navigation, Compass, ExternalLink } from 'lucide-react';
+import mapImg from '../assets/images/valle_elqui_map_1784506602529.jpg';
 
 export default function Location() {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=-29.99874891290801%2C-70.68444014484847";
+  const embedMapsUrl = "https://maps.google.com/maps?q=-29.99874891290801,-70.68444014484847&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <section id="ubicacion" className="py-24 bg-night-950 text-[#F5F2ED] relative overflow-hidden border-t border-white/5">
@@ -82,44 +84,31 @@ export default function Location() {
             </a>
           </div>
 
-          {/* Styled Map Image Display Right */}
+          {/* Styled Live Map Display Right */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 aspect-[16/10] bg-night-900 group">
-              {/* Actual Graphic Styled Map */}
-              <img
-                src="/src/assets/images/valle_elqui_map_1784506602529.jpg"
-                alt="Mapa estilizado de la ubicación en Ruta D-359, Vicuña, Valle del Elqui"
-                className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-[1.03]"
-                referrerPolicy="no-referrer"
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 aspect-[16/11] bg-night-900 group shadow-2xl">
+              {/* Interactive Iframe Google Maps */}
+              <iframe
+                src={embedMapsUrl}
+                className="w-full h-full border-0 opacity-80 hover:opacity-100 transition-opacity duration-300 rounded-3xl grayscale invert-[0.9] contrast-[1.1] hue-rotate-[190deg]"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación del Refugio Noche Andina"
               />
               
-              {/* Overlay styling & vignette */}
-              <div className="absolute inset-0 bg-gradient-to-t from-night-950/60 to-transparent pointer-events-none" />
-
-              {/* Pulsing Pin Overlay on Map */}
-              <div className="absolute top-[48%] left-[45%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none">
-                <div className="relative">
-                  <div className="absolute -inset-2 rounded-full bg-gold-500/30 animate-ping" />
-                  <div className="relative w-5 h-5 rounded-full bg-gold-500 border-2 border-white flex items-center justify-center shadow-lg shadow-gold-500/50">
-                    <div className="w-2 h-2 rounded-full bg-night-950" />
-                  </div>
-                </div>
-                <div className="mt-2 bg-night-950/95 border border-gold-500/30 px-3 py-1 rounded-lg shadow-2xl">
-                  <span className="font-mono text-[9px] font-black text-gold-400 uppercase tracking-widest">
-                    Refugio Noche Andina
-                  </span>
-                </div>
-              </div>
+              {/* Overlay styling for smooth edges */}
+              <div className="absolute inset-0 border border-white/5 rounded-3xl pointer-events-none" />
 
               {/* Hover link button on top of map */}
-              <div className="absolute bottom-6 right-6">
+              <div className="absolute bottom-4 right-4 z-20">
                 <a
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 bg-night-950/90 hover:bg-night-900 text-white font-sans text-[10px] tracking-widest uppercase font-bold py-2.5 px-4 rounded-xl border border-white/10 transition-colors"
+                  className="inline-flex items-center gap-1.5 bg-night-950/90 hover:bg-gold-500 hover:text-night-950 text-white font-sans text-[10px] tracking-widest uppercase font-bold py-2.5 px-4 rounded-xl border border-white/10 transition-all shadow-lg"
                 >
-                  <MapPin className="w-3.5 h-3.5 text-gold-500" />
+                  <MapPin className="w-3.5 h-3.5 text-gold-500 group-hover:text-night-950" />
                   <span>¿Cómo llegar?</span>
                 </a>
               </div>

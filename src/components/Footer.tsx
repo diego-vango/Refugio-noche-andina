@@ -1,7 +1,6 @@
 import React from 'react';
 import { Star, Phone, Instagram, MapPin, Mail, Shield, Heart } from 'lucide-react';
-
-const logo = "/src/assets/images/noche_andina_logo_1784502776106.jpg";
+import logo from '../assets/images/noche_andina_logo_1784502776106.jpg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

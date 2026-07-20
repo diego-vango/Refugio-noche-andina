@@ -1,5 +1,7 @@
 import React from 'react';
 import { Heart, Sun, Map } from 'lucide-react';
+import surroundingsImg from '../assets/images/alrededores_elqui_valley_1784506524079.jpg';
+import elquiHeroImg from '../assets/images/elqui_valley_hero_1784501630579.jpg';
 
 export default function About() {
   return (
@@ -56,7 +58,7 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative group overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-night-950">
                   <img
-                    src="/src/assets/images/alrededores_elqui_valley_1784506524079.jpg"
+                    src={surroundingsImg}
                     alt="Entorno natural de cerros y valles en Vicuña"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
@@ -69,7 +71,7 @@ export default function About() {
                 </div>
                 <div className="relative group overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-night-950">
                   <img
-                    src="/src/assets/images/elqui_valley_hero_1784501630579.jpg"
+                    src={elquiHeroImg}
                     alt="Cielos estrellados en el Valle del Elqui"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
