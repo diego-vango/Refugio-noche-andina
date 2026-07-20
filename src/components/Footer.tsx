@@ -123,7 +123,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="/src/assets/images/elqui_valley_hero_1784501630579.jpg"
+                  src="../assets/images/elqui_valley_hero_1784501630579.jpg"
                   alt="Valley thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -139,7 +139,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="/src/assets/images/cruz_del_sur_cabin_1784501640234.jpg"
+                  src="../assets/images/cruz_del_sur_cabin_1784501640234.jpg"
                   alt="Cabin thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -155,7 +155,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="/src/assets/images/los_pimientos_cabin_1784501649919.jpg"
+                  src="../assets/images/los_pimientos_cabin_1784501649919.jpg"
                   alt="Patio thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
