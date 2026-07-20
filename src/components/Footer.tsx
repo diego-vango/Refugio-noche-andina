@@ -1,6 +1,9 @@
 import React from 'react';
 import { Star, Phone, Instagram, MapPin, Mail, Shield, Heart } from 'lucide-react';
 import logo from '../assets/images/noche_andina_logo_1784502776106.jpg';
+import valleyThumb from '../assets/images/elqui_valley_hero_1784501630579.jpg';
+import cabinThumb from '../assets/images/cruz_del_sur_cabin_1784501640234.jpg';
+import patioThumb from '../assets/images/los_pimientos_cabin_1784501649919.jpg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -123,7 +126,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="../assets/images/elqui_valley_hero_1784501630579.jpg"
+                  src={valleyThumb}
                   alt="Valley thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -139,7 +142,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="../assets/images/cruz_del_sur_cabin_1784501640234.jpg"
+                  src={cabinThumb}
                   alt="Cabin thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -155,7 +158,7 @@ export default function Footer() {
                 className="relative aspect-square rounded-lg overflow-hidden group border border-white/5 bg-white/5"
               >
                 <img
-                  src="../assets/images/los_pimientos_cabin_1784501649919.jpg"
+                  src={patioThumb}
                   alt="Patio thumb"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   referrerPolicy="no-referrer"
